@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Chapter : MonoBehaviour
 {
     public UIManager TextManager;
     public List<GameObject> InteractableItems;
+    public ChapterEnvir Environment;
     public virtual string Title { get; } = "Задания закончены!";
     protected bool _finished = false;
     protected bool _mark = false;
@@ -25,10 +27,12 @@ public class Chapter : MonoBehaviour
     private void EndChapter()
     {
         _finished = true;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        Destroy(gameObject);
         foreach (GameObject item in InteractableItems)
         {
-            item.SetActive(false);
+            //item.SetActive(false);
+            Destroy(item);
         }
     }
 

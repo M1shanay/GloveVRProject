@@ -9,6 +9,11 @@ TagManager:
   - PirBlock
   - TargetBlock
   - BagelSlot
+  - Puzzle
+  - CheckCollider
+  - BoltTrigger
+  - Bolt
+  - VFX
   layers:
   - Default
   - TransparentFX
@@ -18,8 +23,8 @@ TagManager:
   - UI
   - LinearChapter
   - BagelFreezeeLayer
-  - 
-  - 
+  - PickedUp
+  - CheckCollider
   - 
   - 
   - 
